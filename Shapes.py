@@ -9,7 +9,7 @@ class shape:
 class Rectangle(shape):
     name = 'Rectangle'
 
-    def __init__(self, width,height):
+    def __init__(self, width=0,height=0):
         self.width = width
         self.height = height
     def get_area(self):
@@ -20,7 +20,7 @@ class Rectangle(shape):
 class Triangle(shape):
     name = 'Triangle'
 
-    def __init__(self, width,height):
+    def __init__(self, width=0,height=0):
         self.width = width
         self.height = height
     def get_area(self):
@@ -35,3 +35,6 @@ class Circle(shape):
         
     def get_area(self):
         return self.PI*self.width*self.height**2
+rect = Rectangle(5,3)
+area_of_rectangle = rect.get_area()
+print(area_of_rectangle)
