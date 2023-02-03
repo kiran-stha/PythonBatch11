@@ -34,7 +34,7 @@ class Circle(shape):
         self.radius = radius
         
     def get_area(self):
-        return self.PI*self.width*self.height**2
+        return self.PI*self.radius**2
 rect = Rectangle(5,3)
 area_of_rectangle = rect.get_area()
 print(area_of_rectangle)
@@ -43,3 +43,7 @@ print(area_of_rectangle)
 tri = Triangle(12,15)
 area_of_triangle = tri.get_area()
 print(area_of_triangle)
+
+cir = Circle(7)
+area_of_circle = cir.get_area()
+print(area_of_circle)
