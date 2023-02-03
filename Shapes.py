@@ -38,3 +38,8 @@ class Circle(shape):
 rect = Rectangle(5,3)
 area_of_rectangle = rect.get_area()
 print(area_of_rectangle)
+
+
+tri = Triangle(12,15)
+area_of_triangle = tri.get_area()
+print(area_of_triangle)
